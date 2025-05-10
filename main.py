@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-
+from datetime import datetime
 app = Flask(__name__)
 
 habitos = []
@@ -19,7 +19,10 @@ def criar_habito():
     habito = {
         'id': prox_id,
         'nome': info['nome'],
-        'freq': info.get('freq','diario')
+        'freq': info.get('freq','diario'),
+        'desc': info.get('desc', ''),
+        'status': info.get('status', 'ativo'),
+        'criacao': datetime.now().strftime('%Y-%m-%d') 
     }
     habitos.append(habito)
     prox_id += 1
