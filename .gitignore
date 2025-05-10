@@ -1,0 +1,28 @@
+# Byte-compiled / otimizados / arquivos DLL
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Desenvolvimento
+.env
+venv/
+ENV/
+env/
+.venv/
+
+# IDE's
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
