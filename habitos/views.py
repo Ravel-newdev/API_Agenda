@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from rest_framework.views import APIView
+from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Habito
@@ -28,9 +29,17 @@ class HabitoDetailView(APIView):
             habito = Habito.objects.get(pk=pk)
             habito.delete()
             print(f"[DELETE]  Hábito com ID {pk} removido.")
-            return Response({"mensagem": f'Hábito {pk} removido sem erros.'}, status=status.HTTP_200_OK)
+            #return Response({"mensagem": f'Hábito {pk} removido sem erros.'}, status=status.HTTP_200_OK)
+            return Response(status=status.HTTP_204_NO_CONTENT)
         except Habito.DoesNotExist:
             print(f"[DELETE] Hábito com o ID {pk} não encontrado.")
             return Response({'erro': 'Hábito não encontrado'}, status=status.HTTP_404_NOT_FOUND)
 
+#testes automatizados genericos
+class listar_criar_habito(generics.ListCreateAPIView):
+    queryset = Habito.objects.all()
+    serializer_class = HabitoSerializer
 
+class deletar_habito(generics.DestroyAPIView):
+    queryset = Habito.objects.all()
+    serializer_class = HabitoSerializer
