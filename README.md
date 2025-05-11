@@ -3,6 +3,7 @@
 
 Projeto de uma API RESTful para gerenciamento de hábitos, semelhante a uma agenda, com operações de CRD completas (Create, Read, Delete), escrita com Django REST Framework.
 
+O projeto consiste em ser uma espécie de agenda para se manter organizado por 1 dia, uma semana, mês, ou ano, pretendo deixa-la completa com formas de editar habitos/compromissos e com mais campos em breve, além de adicionar um HTML/CSS para melhor contato do usuário
 ## 🚀 Funcionalidades
 
 - ✅ Criar hábitos
