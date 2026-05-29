@@ -1,5 +1,4 @@
 # API_Agenda
-#  API de Hábitos
 
 Projeto de uma API RESTful para gerenciamento de hábitos, semelhante a uma agenda, com operações de CRD completas (Create, Read, Delete), escrita com Django REST Framework.
 
