@@ -1,17 +1,17 @@
 # API_Agenda
-# 📘 API de Hábitos
+#  API de Hábitos
 
 Projeto de uma API RESTful para gerenciamento de hábitos, semelhante a uma agenda, com operações de CRD completas (Create, Read, Delete), escrita com Django REST Framework.
 
 O projeto consiste em ser uma espécie de agenda para se manter organizado por 1 dia, uma semana, mês, ou ano, pretendo deixa-la completa com formas de editar habitos/compromissos e com mais campos em breve, além de adicionar um HTML/CSS para melhor contato do usuário
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-- ✅ Criar hábitos
-- 📋 Listar todos os hábitos
-- ❌ Deletar um hábito específico
-- 🧪 Testes automatizados com cobertura básica
+-  Criar hábitos
+-  Listar todos os hábitos
+-  Deletar um hábito específico
+-  Testes automatizados com cobertura básica
 
-## 📦 Endpoints
+##  Endpoints
 
 | Método | Rota           | Descrição                   |
 |--------|----------------|-----------------------------|
@@ -19,14 +19,14 @@ O projeto consiste em ser uma espécie de agenda para se manter organizado por 1
 | POST   | /agenda/       | Cria um novo hábito         |
 | DELETE | /agenda/{id}/  | Remove hábito pelo ID       |
 
-##📁 Tecnologias
+## Tecnologias
 -Python 3
 -Django
 -Django REST Framework
 -SQLite (banco de dados padrão)
 -Postman (para testes manuais)
 
-## 📄 Exemplo de JSON (POST)
+##  Exemplo de JSON (POST)
 
 ```json
 {
@@ -36,7 +36,7 @@ O projeto consiste em ser uma espécie de agenda para se manter organizado por 1
   "status": "ativo"
 }
 ```
-##🛠️ Como rodar o projeto localmente
+## Como rodar o projeto localmente
 1. Clone o repositório e acesse a pasta
 2. Crie o ambiente virtual (python -m venv venv, depois execute "venv/bin/activate" se estiver no Linux ou MacOS, e "venv\Scripts\activate" se for Windows)
 3. instale as dependências
